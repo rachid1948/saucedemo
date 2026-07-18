@@ -20,16 +20,21 @@ public class InventoryPage extends BasePage {
     private final By logoutLink = By.id("logout_sidebar_link");
 
     public InventoryPage addFirstProductToCart() {
-        waitForClickable(addBtns); // attendre page entièrement chargée
+        waitForClickable(addBtns);
         List<WebElement> btns = driver.findElements(addBtns);
-        if (!btns.isEmpty()) { btns.get(0).click(); logger.info("Produit 1 ajouté."); }
+        if (!btns.isEmpty()) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btns.get(0));
+            logger.info("Produit 1 ajouté.");
+        }
         return this;
     }
 
     public InventoryPage addProductsToCart(int n) {
         waitForClickable(addBtns);
         List<WebElement> btns = driver.findElements(addBtns);
-        for (int i = 0; i < Math.min(n, btns.size()); i++) btns.get(i).click();
+        for (int i = 0; i < Math.min(n, btns.size()); i++) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btns.get(i));
+        }
         return this;
     }
 

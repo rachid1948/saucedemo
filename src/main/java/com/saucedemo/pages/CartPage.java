@@ -2,6 +2,7 @@ package com.saucedemo.pages;
 
 import com.saucedemo.base.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import java.util.List;
 
@@ -14,13 +15,18 @@ public class CartPage extends BasePage {
     private final By removeBtns = By.cssSelector("button[id^='remove']");
 
     public CheckoutPage proceedToCheckout() {
-        click(checkoutBtn);
-        waitForVisible(By.id("first-name")); // CRUCIAL : attendre step 1
+        ((JavascriptExecutor) driver).executeScript(
+                "document.getElementById('checkout').click();"
+        );
+        waitForVisible(By.id("first-name"));
         return new CheckoutPage();
     }
 
     public InventoryPage continueShopping() {
-        click(continueBtn);
+        ((JavascriptExecutor) driver).executeScript(
+                "document.getElementById('continue-shopping').click();"
+        );
+        waitForVisible(By.cssSelector(".inventory_item"));
         return new InventoryPage();
     }
 
