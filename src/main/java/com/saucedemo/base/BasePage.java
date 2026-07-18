@@ -29,6 +29,11 @@ public abstract class BasePage {
         waitForClickable(l).click();
     }
 
+    protected void jsClick(By l) {
+        WebElement e = waitForClickable(l);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", e);
+    }
+
     // IMPORTANT : el.click() avant clear() pour déclencher les events React
     protected void type(By l, String t) {
         logger.debug("type ['{}'] => {}", t, l);

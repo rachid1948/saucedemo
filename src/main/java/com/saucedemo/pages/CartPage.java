@@ -33,7 +33,11 @@ public class CartPage extends BasePage {
 
     public CartPage removeFirstItem() {
         List<WebElement> btns = driver.findElements(removeBtns);
-        if (!btns.isEmpty()) btns.get(0).click();
+        if (!btns.isEmpty()) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btns.get(0));
+            // Attendre que l'item disparaisse
+            wait.until(d -> d.findElements(cartItems).size() < 1);
+        }
         return this;
     }
 

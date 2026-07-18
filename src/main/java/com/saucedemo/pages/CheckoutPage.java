@@ -26,13 +26,13 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage clickContinue() {
-        click(continueBtn);
+        jsClick(continueBtn);
         return this;
     }
 
     public CartPage cancelCheckout() {
-        click(cancelBtn);
-        wait.until(d -> d.getCurrentUrl().contains("/cart.html")); // ← attendre URL
+        jsClick(cancelBtn);
+        wait.until(d -> d.getCurrentUrl().contains("/cart.html"));
         return new CartPage();
     }
 
