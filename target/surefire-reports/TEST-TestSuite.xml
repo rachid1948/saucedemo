@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="24.295" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="webdriver.chrome.driver" value="/Users/marketing/.cache/selenium/chromedriver/mac-arm64/150.0.7871.124/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/marketing/Rachid/TESTING/Project/saucedemo/target/test-classes:/Users/marketing/Rachid/TESTING/Project/saucedemo/target/classes:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-java/4.18.1/selenium-java-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-api/4.18.1/selenium-api-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.18.1/selenium-chrome-driver-4.18.1.jar:/Users/marketing/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.18.1/selenium-chromium-driver-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-json/4.18.1/selenium-json-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.18.1/selenium-manager-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v120/4.18.1/selenium-devtools-v120-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v121/4.18.1/selenium-devtools-v121-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v122/4.18.1/selenium-devtools-v122-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.18.1/selenium-devtools-v85-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.18.1/selenium-edge-driver-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.18.1/selenium-firefox-driver-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-http/4.18.1/selenium-http-4.18.1.jar:/Users/marketing/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.18.1/selenium-ie-driver-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.18.1/selenium-remote-driver-4.18.1.jar:/Users/marketing/.m2/repository/com/google/guava/guava/33.0.0-jre/guava-33.0.0-jre.jar:/Users/marketing/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/marketing/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/marketing/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/marketing/.m2/repository/org/checkerframework/checker-qual/3.41.0/checker-qual-3.41.0.jar:/Users/marketing/.m2/repository/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.jar:/Users/marketing/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/marketing/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.23.1-alpha/opentelemetry-semconv-1.23.1-alpha.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-api/1.35.0/opentelemetry-api-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-context/1.35.0/opentelemetry-context-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.35.0/opentelemetry-exporter-logging-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.35.0/opentelemetry-sdk-common-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.35.0/opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.35.0/opentelemetry-sdk-extension-autoconfigure-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.35.0-alpha/opentelemetry-api-events-1.35.0-alpha.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.35.0/opentelemetry-sdk-trace-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.35.0-alpha/opentelemetry-extension-incubator-1.35.0-alpha.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.35.0/opentelemetry-sdk-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.35.0/opentelemetry-sdk-metrics-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.35.0/opentelemetry-sdk-logs-1.35.0.jar:/Users/marketing/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-os/4.18.1/selenium-os-4.18.1.jar:/Users/marketing/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.18.1/selenium-safari-driver-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-support/4.18.1/selenium-support-4.18.1.jar:/Users/marketing/.m2/repository/io/github/bonigarcia/webdrivermanager/5.7.0/webdrivermanager-5.7.0.jar:/Users/marketing/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/marketing/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/marketing/.m2/repository/com/github/docker-java/docker-java/3.3.5/docker-java-3.3.5.jar:/Users/marketing/.m2/repository/com/github/docker-java/docker-java-core/3.3.5/docker-java-core-3.3.5.jar:/Users/marketing/.m2/repository/com/github/docker-java/docker-java-api/3.3.5/docker-java-api-3.3.5.jar:/Users/marketing/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/marketing/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/marketing/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/marketing/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/Users/marketing/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/Users/marketing/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/Users/marketing/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/marketing/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.5/docker-java-transport-httpclient5-3.3.5.jar:/Users/marketing/.m2/repository/com/github/docker-java/docker-java-transport/3.3.5/docker-java-transport-3.3.5.jar:/Users/marketing/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/marketing/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/marketing/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/marketing/.m2/repository/org/apache/commons/commons-compress/1.26.0/commons-compress-1.26.0.jar:/Users/marketing/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/Users/marketing/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/marketing/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/marketing/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/marketing/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/marketing/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/marketing/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/marketing/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar:/Users/marketing/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/marketing/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/marketing/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/marketing/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/marketing/.m2/repository/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar:/Users/marketing/.m2/repository/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Africa/Casablanca"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="MA"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/marketing/Rachid/TESTING/Project/saucedemo/target/surefire/surefirebooter-20260718150718533_3.jar /Users/marketing/Rachid/TESTING/Project/saucedemo/target/surefire 2026-07-18T15-07-18_503-jvmRun1 surefire-20260718150718533_1tmp surefire_0-20260718150718533_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/marketing/Rachid/TESTING/Project/saucedemo/target/test-classes:/Users/marketing/Rachid/TESTING/Project/saucedemo/target/classes:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-java/4.18.1/selenium-java-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-api/4.18.1/selenium-api-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.18.1/selenium-chrome-driver-4.18.1.jar:/Users/marketing/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.18.1/selenium-chromium-driver-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-json/4.18.1/selenium-json-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.18.1/selenium-manager-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v120/4.18.1/selenium-devtools-v120-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v121/4.18.1/selenium-devtools-v121-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v122/4.18.1/selenium-devtools-v122-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.18.1/selenium-devtools-v85-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.18.1/selenium-edge-driver-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.18.1/selenium-firefox-driver-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-http/4.18.1/selenium-http-4.18.1.jar:/Users/marketing/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.18.1/selenium-ie-driver-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.18.1/selenium-remote-driver-4.18.1.jar:/Users/marketing/.m2/repository/com/google/guava/guava/33.0.0-jre/guava-33.0.0-jre.jar:/Users/marketing/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/marketing/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/marketing/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/marketing/.m2/repository/org/checkerframework/checker-qual/3.41.0/checker-qual-3.41.0.jar:/Users/marketing/.m2/repository/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.jar:/Users/marketing/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/marketing/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.23.1-alpha/opentelemetry-semconv-1.23.1-alpha.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-api/1.35.0/opentelemetry-api-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-context/1.35.0/opentelemetry-context-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.35.0/opentelemetry-exporter-logging-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.35.0/opentelemetry-sdk-common-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.35.0/opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.35.0/opentelemetry-sdk-extension-autoconfigure-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.35.0-alpha/opentelemetry-api-events-1.35.0-alpha.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.35.0/opentelemetry-sdk-trace-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.35.0-alpha/opentelemetry-extension-incubator-1.35.0-alpha.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.35.0/opentelemetry-sdk-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.35.0/opentelemetry-sdk-metrics-1.35.0.jar:/Users/marketing/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.35.0/opentelemetry-sdk-logs-1.35.0.jar:/Users/marketing/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-os/4.18.1/selenium-os-4.18.1.jar:/Users/marketing/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.18.1/selenium-safari-driver-4.18.1.jar:/Users/marketing/.m2/repository/org/seleniumhq/selenium/selenium-support/4.18.1/selenium-support-4.18.1.jar:/Users/marketing/.m2/repository/io/github/bonigarcia/webdrivermanager/5.7.0/webdrivermanager-5.7.0.jar:/Users/marketing/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/marketing/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/marketing/.m2/repository/com/github/docker-java/docker-java/3.3.5/docker-java-3.3.5.jar:/Users/marketing/.m2/repository/com/github/docker-java/docker-java-core/3.3.5/docker-java-core-3.3.5.jar:/Users/marketing/.m2/repository/com/github/docker-java/docker-java-api/3.3.5/docker-java-api-3.3.5.jar:/Users/marketing/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/marketing/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/marketing/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/marketing/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/Users/marketing/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/Users/marketing/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/Users/marketing/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/marketing/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.5/docker-java-transport-httpclient5-3.3.5.jar:/Users/marketing/.m2/repository/com/github/docker-java/docker-java-transport/3.3.5/docker-java-transport-3.3.5.jar:/Users/marketing/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/marketing/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/marketing/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/marketing/.m2/repository/org/apache/commons/commons-compress/1.26.0/commons-compress-1.26.0.jar:/Users/marketing/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/Users/marketing/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/marketing/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/marketing/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/marketing/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/marketing/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/marketing/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/marketing/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar:/Users/marketing/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/marketing/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/marketing/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/marketing/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/marketing/.m2/repository/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar:/Users/marketing/.m2/repository/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/marketing"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/marketing/Rachid/TESTING/Project/saucedemo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/marketing/Rachid/TESTING/Project/saucedemo/target/surefire/surefirebooter-20260718150718533_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.2"/>
+    <property name="user.name" value="marketing"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/marketing/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/ky/t5y1cs6n3rq58ng2bxq1wsl40000gn/T/"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="/Users/marketing/Rachid/TESTING/Project/saucedemo"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/marketing/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="23.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testEmptyCredentials" classname="com.saucedemo.tests.LoginTest" time="0.245">
+    <system-out><![CDATA[15:07:19 INFO  com.saucedemo.tests.BaseTest - ===== START: testEmptyCredentials =====
+15:07:19 INFO  com.saucedemo.utils.ConfigReader - Environnement : dev | Fichier : config.properties
+15:07:20 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:20 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:20 INFO  com.saucedemo.listeners.TestListener - >> START  testEmptyCredentials
+15:07:21 INFO  com.saucedemo.listeners.TestListener - >> PASS   testEmptyCredentials
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+juil. 18, 2026 3:07:20 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:20 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testInvalidPassword" classname="com.saucedemo.tests.LoginTest" time="0.244">
+    <system-out><![CDATA[15:07:21 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:21 INFO  com.saucedemo.tests.BaseTest - ===== START: testInvalidPassword =====
+15:07:21 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:21 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:21 INFO  com.saucedemo.listeners.TestListener - >> START  testInvalidPassword
+15:07:22 INFO  com.saucedemo.listeners.TestListener - >> PASS   testInvalidPassword
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:21 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:21 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testLockedOutUser" classname="com.saucedemo.tests.LoginTest" time="0.231">
+    <system-out><![CDATA[15:07:22 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:22 INFO  com.saucedemo.tests.BaseTest - ===== START: testLockedOutUser =====
+15:07:22 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:22 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:23 INFO  com.saucedemo.listeners.TestListener - >> START  testLockedOutUser
+15:07:23 INFO  com.saucedemo.listeners.TestListener - >> PASS   testLockedOutUser
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:22 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:22 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testLogout" classname="com.saucedemo.tests.LoginTest" time="0.842">
+    <system-out><![CDATA[15:07:23 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:23 INFO  com.saucedemo.tests.BaseTest - ===== START: testLogout =====
+15:07:23 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:23 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:24 INFO  com.saucedemo.listeners.TestListener - >> START  testLogout
+15:07:24 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:25 INFO  com.saucedemo.listeners.TestListener - >> PASS   testLogout
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:23 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:23 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testValidLogin" classname="com.saucedemo.tests.LoginTest" time="0.232">
+    <system-out><![CDATA[15:07:25 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:25 INFO  com.saucedemo.tests.BaseTest - ===== START: testValidLogin =====
+15:07:25 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:25 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:26 INFO  com.saucedemo.listeners.TestListener - >> START  testValidLogin
+15:07:26 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:26 INFO  com.saucedemo.listeners.TestListener - >> PASS   testValidLogin
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:25 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:25 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAddOneProduct" classname="com.saucedemo.tests.InventoryTest" time="0.35">
+    <system-out><![CDATA[15:07:26 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:26 INFO  com.saucedemo.tests.BaseTest - ===== START: testAddOneProduct =====
+15:07:26 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:26 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:27 INFO  com.saucedemo.listeners.TestListener - >> START  testAddOneProduct
+15:07:27 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:27 INFO  com.saucedemo.base.BasePage - Produit 1 ajouté.
+15:07:27 INFO  com.saucedemo.listeners.TestListener - >> PASS   testAddOneProduct
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:26 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:26 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAddThreeProducts" classname="com.saucedemo.tests.InventoryTest" time="0.338">
+    <system-out><![CDATA[15:07:27 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:27 INFO  com.saucedemo.tests.BaseTest - ===== START: testAddThreeProducts =====
+15:07:28 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:28 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:28 INFO  com.saucedemo.listeners.TestListener - >> START  testAddThreeProducts
+15:07:28 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:28 INFO  com.saucedemo.listeners.TestListener - >> PASS   testAddThreeProducts
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:28 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:28 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testProductCount" classname="com.saucedemo.tests.InventoryTest" time="0.247">
+    <system-out><![CDATA[15:07:28 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:28 INFO  com.saucedemo.tests.BaseTest - ===== START: testProductCount =====
+15:07:29 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:29 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:29 INFO  com.saucedemo.listeners.TestListener - >> START  testProductCount
+15:07:29 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:29 INFO  com.saucedemo.listeners.TestListener - >> PASS   testProductCount
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:29 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:29 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testSortNameDesc" classname="com.saucedemo.tests.InventoryTest" time="0.29">
+    <system-out><![CDATA[15:07:29 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:29 INFO  com.saucedemo.tests.BaseTest - ===== START: testSortNameDesc =====
+15:07:30 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:30 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:30 INFO  com.saucedemo.listeners.TestListener - >> START  testSortNameDesc
+15:07:30 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:31 INFO  com.saucedemo.listeners.TestListener - >> PASS   testSortNameDesc
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:30 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:30 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testSortPriceAsc" classname="com.saucedemo.tests.InventoryTest" time="0.277">
+    <system-out><![CDATA[15:07:31 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:31 INFO  com.saucedemo.tests.BaseTest - ===== START: testSortPriceAsc =====
+15:07:31 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:31 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:32 INFO  com.saucedemo.listeners.TestListener - >> START  testSortPriceAsc
+15:07:32 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:32 INFO  com.saucedemo.listeners.TestListener - >> PASS   testSortPriceAsc
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:31 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:31 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testContinueShopping" classname="com.saucedemo.tests.CartTest" time="0.341">
+    <system-out><![CDATA[15:07:32 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:32 INFO  com.saucedemo.tests.BaseTest - ===== START: testContinueShopping =====
+15:07:32 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:32 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:33 INFO  com.saucedemo.listeners.TestListener - >> START  testContinueShopping
+15:07:33 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:33 INFO  com.saucedemo.listeners.TestListener - >> PASS   testContinueShopping
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:32 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:32 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testEmptyCart" classname="com.saucedemo.tests.CartTest" time="0.266">
+    <system-out><![CDATA[15:07:33 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:33 INFO  com.saucedemo.tests.BaseTest - ===== START: testEmptyCart =====
+15:07:34 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:34 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:34 INFO  com.saucedemo.listeners.TestListener - >> START  testEmptyCart
+15:07:34 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:34 INFO  com.saucedemo.listeners.TestListener - >> PASS   testEmptyCart
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:34 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:34 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testProductInCart" classname="com.saucedemo.tests.CartTest" time="0.292">
+    <system-out><![CDATA[15:07:34 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:34 INFO  com.saucedemo.tests.BaseTest - ===== START: testProductInCart =====
+15:07:35 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:35 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:35 INFO  com.saucedemo.listeners.TestListener - >> START  testProductInCart
+15:07:35 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:35 INFO  com.saucedemo.base.BasePage - Produit 1 ajouté.
+15:07:35 INFO  com.saucedemo.listeners.TestListener - >> PASS   testProductInCart
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:35 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:35 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testRemoveItem" classname="com.saucedemo.tests.CartTest" time="0.293">
+    <system-out><![CDATA[15:07:36 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:36 INFO  com.saucedemo.tests.BaseTest - ===== START: testRemoveItem =====
+15:07:36 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:36 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:36 INFO  com.saucedemo.listeners.TestListener - >> START  testRemoveItem
+15:07:36 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:37 INFO  com.saucedemo.base.BasePage - Produit 1 ajouté.
+15:07:37 INFO  com.saucedemo.listeners.TestListener - >> PASS   testRemoveItem
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:36 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:36 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testCancelCheckout" classname="com.saucedemo.tests.CheckoutTest" time="0.442">
+    <system-out><![CDATA[15:07:37 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:37 INFO  com.saucedemo.tests.BaseTest - ===== START: testCancelCheckout =====
+15:07:37 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:37 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:38 INFO  com.saucedemo.listeners.TestListener - >> START  testCancelCheckout
+15:07:38 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:38 INFO  com.saucedemo.base.BasePage - Produit 1 ajouté.
+15:07:38 INFO  com.saucedemo.listeners.TestListener - >> PASS   testCancelCheckout
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:37 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:37 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testCompleteCheckout" classname="com.saucedemo.tests.CheckoutTest" time="0.524">
+    <system-out><![CDATA[15:07:38 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:38 INFO  com.saucedemo.tests.BaseTest - ===== START: testCompleteCheckout =====
+15:07:39 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:39 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:39 INFO  com.saucedemo.listeners.TestListener - >> START  testCompleteCheckout
+15:07:39 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:39 INFO  com.saucedemo.base.BasePage - Produit 1 ajouté.
+15:07:39 INFO  com.saucedemo.base.BasePage - Fill info: Rachid Chaouky
+15:07:39 INFO  com.saucedemo.listeners.TestListener - >> PASS   testCompleteCheckout
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:39 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:39 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testMissingFirstName" classname="com.saucedemo.tests.CheckoutTest" time="0.454">
+    <system-out><![CDATA[15:07:40 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:40 INFO  com.saucedemo.tests.BaseTest - ===== START: testMissingFirstName =====
+15:07:40 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:40 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:40 INFO  com.saucedemo.listeners.TestListener - >> START  testMissingFirstName
+15:07:40 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:41 INFO  com.saucedemo.base.BasePage - Produit 1 ajouté.
+15:07:41 INFO  com.saucedemo.base.BasePage - Fill info:  Chaouky
+15:07:41 INFO  com.saucedemo.listeners.TestListener - >> PASS   testMissingFirstName
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:40 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:40 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testOrderSummary" classname="com.saucedemo.tests.CheckoutTest" time="0.495">
+    <system-out><![CDATA[15:07:41 INFO  com.saucedemo.utils.DriverManager - Driver ferme.
+15:07:41 INFO  com.saucedemo.tests.BaseTest - ===== START: testOrderSummary =====
+15:07:41 INFO  com.saucedemo.utils.DriverManager - Driver chrome pret (headless=false).
+15:07:41 INFO  com.saucedemo.base.BasePage - goto https://www.saucedemo.com
+15:07:42 INFO  com.saucedemo.listeners.TestListener - >> START  testOrderSummary
+15:07:42 INFO  com.saucedemo.base.BasePage - Login: standard_user
+15:07:42 INFO  com.saucedemo.base.BasePage - Produit 1 ajouté.
+15:07:42 INFO  com.saucedemo.base.BasePage - Fill info: Rachid Chaouky
+15:07:42 INFO  com.saucedemo.listeners.TestListener - >> PASS   testOrderSummary
+]]></system-out>
+    <system-err><![CDATA[juil. 18, 2026 3:07:41 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+AVERTISSEMENT: Unable to find CDP implementation matching 150
+juil. 18, 2026 3:07:41 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+AVERTISSEMENT: Unable to find version of CDP to use for 150.0.7871.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

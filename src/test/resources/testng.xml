@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Suite" verbose="1">
+    <listeners>
+        <listener class-name="com.saucedemo.listeners.TestListener"/>
+    </listeners>
+    <test name="Login">    <classes><class name="com.saucedemo.tests.LoginTest"/></classes>    </test>
+    <test name="Inventory"><classes><class name="com.saucedemo.tests.InventoryTest"/></classes></test>
+    <test name="Cart">     <classes><class name="com.saucedemo.tests.CartTest"/></classes>     </test>
+    <test name="Checkout"> <classes><class name="com.saucedemo.tests.CheckoutTest"/></classes> </test>
+</suite>
