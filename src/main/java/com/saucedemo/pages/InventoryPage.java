@@ -24,6 +24,7 @@ public class InventoryPage extends BasePage {
         List<WebElement> btns = driver.findElements(addBtns);
         if (!btns.isEmpty()) {
             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btns.get(0));
+            waitForVisible(badge); // ← attendre que le badge apparaisse
             logger.info("Produit 1 ajouté.");
         }
         return this;
@@ -35,6 +36,7 @@ public class InventoryPage extends BasePage {
         for (int i = 0; i < Math.min(n, btns.size()); i++) {
             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btns.get(i));
         }
+        waitForVisible(badge); // ← attendre badge après tous les clics
         return this;
     }
 

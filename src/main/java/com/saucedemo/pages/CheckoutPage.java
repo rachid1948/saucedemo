@@ -32,7 +32,7 @@ public class CheckoutPage extends BasePage {
 
     public CartPage cancelCheckout() {
         click(cancelBtn);
-        waitForVisible(By.id("checkout")); // attendre retour sur page panier
+        wait.until(d -> d.getCurrentUrl().contains("/cart.html")); // ← attendre URL
         return new CartPage();
     }
 
