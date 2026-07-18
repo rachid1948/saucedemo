@@ -29,6 +29,17 @@ public abstract class BasePage {
         waitForClickable(l).click();
     }
 
+    protected void jsSetValue(By locator, String value) {
+        WebElement e = waitForVisible(locator);
+        ((JavascriptExecutor) driver).executeScript(
+                "var setter = Object.getOwnPropertyDescriptor(" +
+                        "  window.HTMLInputElement.prototype, 'value').set;" +
+                        "setter.call(arguments[0], arguments[1]);" +
+                        "arguments[0].dispatchEvent(new Event('input', {bubbles:true}));",
+                e, value
+        );
+    }
+
     protected void jsClick(By l) {
         WebElement e = waitForClickable(l);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", e);

@@ -19,15 +19,15 @@ public class CheckoutPage extends BasePage {
 
     public CheckoutPage fillCustomerInfo(String fn, String ln, String zip) {
         logger.info("Fill info: {} {}", fn, ln);
-        type(firstName, fn);
-        type(lastName, ln);
-        type(postalCode, zip);
+        jsSetValue(firstName, fn);
+        jsSetValue(lastName, ln);
+        jsSetValue(postalCode, zip);
         return this;
     }
 
     public CheckoutPage clickContinue() {
         jsClick(continueBtn);
-        return this;
+        return this;  // ← supprime le wait.until(...)
     }
 
     public CartPage cancelCheckout() {
