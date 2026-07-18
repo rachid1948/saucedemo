@@ -1,6 +1,0 @@
-com/saucedemo/tests/BaseTest.class
-com/saucedemo/listeners/TestListener.class
-com/saucedemo/tests/CartTest.class
-com/saucedemo/tests/CheckoutTest.class
-com/saucedemo/tests/LoginTest.class
-com/saucedemo/tests/InventoryTest.class
