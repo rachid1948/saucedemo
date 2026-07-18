@@ -40,7 +40,7 @@ public class CheckoutPage extends BasePage {
         return fillCustomerInfo(fn, ln, zip).clickContinue();
     }
 
-    public CheckoutPage clickFinish()    { click(finishBtn);  return this; }
+    public CheckoutPage clickFinish() { jsClick(finishBtn); return this;}
     public InventoryPage backToHome()    { click(backBtn);    return new InventoryPage(); }
 
     public boolean isOnCheckoutStep1()    { return getCurrentUrl().contains("checkout-step-one"); }
