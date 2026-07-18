@@ -45,8 +45,8 @@ public class InventoryPage extends BasePage {
     }
 
     public CartPage goToCart() {
-        click(cartIcon);
-        wait.until(d -> d.getCurrentUrl().contains("/cart.html")); // ← attendre la navigation
+        jsClick(cartIcon);   // ← remplace click(cartIcon)
+        wait.until(d -> d.getCurrentUrl().contains("/cart.html"));
         return new CartPage();
     }
 
