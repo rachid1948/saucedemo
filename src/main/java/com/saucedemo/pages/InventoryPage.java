@@ -23,8 +23,10 @@ public class InventoryPage extends BasePage {
         waitForClickable(addBtns);
         List<WebElement> btns = driver.findElements(addBtns);
         if (!btns.isEmpty()) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", btns.get(0));
             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btns.get(0));
-            waitForVisible(badge); // ← attendre que le badge apparaisse
+            // Attendre que le bouton devienne "Remove" — confirme que l'ajout est effectif
+            wait.until(d -> !d.findElements(By.cssSelector("button[id^='remove']")).isEmpty());
             logger.info("Produit 1 ajouté.");
         }
         return this;
@@ -34,14 +36,17 @@ public class InventoryPage extends BasePage {
         waitForClickable(addBtns);
         List<WebElement> btns = driver.findElements(addBtns);
         for (int i = 0; i < Math.min(n, btns.size()); i++) {
+            btns = driver.findElements(addBtns); // re-fetch après chaque clic
             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btns.get(i));
+            int finalI = i;
+            wait.until(d -> d.findElements(By.cssSelector("button[id^='remove']")).size() > finalI);
         }
-        waitForVisible(badge); // ← attendre badge après tous les clics
         return this;
     }
 
     public CartPage goToCart() {
         click(cartIcon);
+        wait.until(d -> d.getCurrentUrl().contains("/cart.html")); // ← attendre la navigation
         return new CartPage();
     }
 

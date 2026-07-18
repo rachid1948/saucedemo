@@ -15,8 +15,10 @@ public class CartPage extends BasePage {
     private final By removeBtns = By.cssSelector("button[id^='remove']");
 
     public CheckoutPage proceedToCheckout() {
-        WebElement btn = waitForClickable(checkoutBtn); // ← attendre d'abord
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btn); // ← clic JS sur l'élément trouvé
+        wait.until(d -> d.getCurrentUrl().contains("/cart.html")); // sécurité
+        ((JavascriptExecutor) driver).executeScript(
+                "document.querySelector('#checkout').click();"
+        );
         waitForVisible(By.id("first-name"));
         return new CheckoutPage();
     }
